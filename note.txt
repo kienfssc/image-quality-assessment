@@ -1,0 +1,4 @@
+docker run --entrypoint entrypoints/entrypoint.predict.cpu.sh -v 
+"/sers/airforceone/Desktop/work/Nippon_Oi/Res":/src/Res -v 
+"/Users/airforceone/Documents/image-quality-assessment/models/MobileNet/weights_mobilenet_technical_0.11.hdf5":/src/weights.hdf5 
+nima-cpu MobileNet /src/weights.hdf5 /src/Res
